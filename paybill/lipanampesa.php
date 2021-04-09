@@ -23,7 +23,7 @@
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://ect.co.ke/dist/safaricom_api/paybill/callback_url.php';  
+  $CallBackURL = 'https://your_url/callback_url.php';  //where your response is to sent by daraja
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
