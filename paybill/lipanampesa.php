@@ -2,16 +2,16 @@
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = 'xu5va2L8rufsCxhUWmFat0NSZsAucLTE';
-  $consumerSecret = 'D6kfeHbuzITXWrfu'; 
+  $consumerKey = 'your_daraja_customer_key';
+  $consumerSecret = 'your_daraja_secret_key'; 
 
   # define the variables
-  $BusinessShortCode = '174379';
+  $BusinessShortCode = '174379'; //for testing
   $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';  
-  $PartyA = '254797378891';
+  $PartyA = '254797378891'; //number to pay the amount
   $AccountReference = 'chama001';
   $TransactionDesc = 'pay your annual chama';
-  $Amount = '5';
+  $Amount = '5'; //amount to pay
   $Timestamp = date('YmdHis');    
   $Password = base64_encode($BusinessShortCode.$Passkey.$Timestamp);
 
